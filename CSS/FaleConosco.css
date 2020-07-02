@@ -1,0 +1,208 @@
+body{
+   
+}
+
+.cabecalho{box-shadow: 0 0 15px black;}
+
+.content-entry{
+    background-image: url(../src/sushi-istock.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: auto;
+    padding: 125px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 15px black inset;
+}
+
+.entry-text{
+    color: white;
+    background-color: #6D9446;
+    text-align: center;
+    border-radius: 2px;
+    padding: 25px;
+    font-size: 32px;
+    font-family: venner;
+    box-shadow: 0 0 30px rgba(0,0,0,0.7);
+}
+
+.container-buttons{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 80%;
+    margin-top: 50px;
+}
+
+.b-action i{
+    margin-left: 0;
+    margin-right: 15px;
+}
+
+@media screen and (max-width:540px){
+
+    .content-entry{height: auto;padding: 50px 0;}
+
+    .container-buttons{flex-direction: column;}
+
+    .b-action{
+        margin-bottom: 25px;
+        width: 200px;
+        display: flex;
+        text-align: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .b-action i{
+        margin: 5px 0;
+    }
+}
+
+/*  FORM CONTACT */
+
+.cover-form{
+    background-color: rgb(75, 75, 75);
+    opacity: 0;
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.new-order{
+    background-color: #111111;
+    color: white;
+    top:80px;
+    border-radius: 5px;
+    box-shadow: 0 0 15px black;
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+    padding: 50px 0;
+    width: 90%;
+    margin-left: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    background-image: url(../src/food4.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.column-form{
+    height: 100%;
+    width: 90%;
+    border-radius: 0 5px 5px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+}
+
+.form-row{
+    flex-wrap: wrap;
+    line-height: 80px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.form-row:nth-child(2){margin-top: 40px;}
+
+.form-row:nth-child(5){margin-top: 40px;align-items: flex-end;justify-content: flex-end;width: 100%;}
+
+.img-contato{
+    width: 250px;
+    box-shadow: 0 0 10px black;
+    border-radius: 50%;
+    margin-top: 25px;
+}
+
+.TxtIntroduct{
+    width: 80%;
+    margin-top: 25px;
+    font-size: 22px;
+    text-align: center;
+}
+
+.form-title{
+    font-family: venner;
+    font-size: 30px;
+    text-align: left;
+    width: 100%;
+    text-shadow: 0 0 15px black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.form-title i{cursor: pointer;transition: .3s;padding: 5px;}
+.form-title i:hover{color: rgb(221, 188, 0);}
+
+.new-order input,select,textarea{
+    background-color:#333;
+	border-radius:8px;
+	padding:10px 12px;
+	color:white;
+    outline:none;
+    font-size: 22px;
+	width:350px;
+	box-shadow:0 0 10px black inset;
+	border:3.5px transparent solid;
+}
+
+.new-order textarea{
+    position: relative;
+    width: 100%;
+    resize: none;
+    height: 150px;
+}
+
+.num-carac{
+    text-align: right;
+    width: 95%;
+    font-size: 18px;
+}
+
+.b-action{
+    font-size: 20px;
+    width: auto;
+}
+.b-action i{
+    margin-left: 15px;
+}
+
+.new-order textarea:focus,.new-order input:focus,.new-order select:focus{
+	border:0.2vw orangered solid;
+}
+
+@media screen and (max-width:500px){
+    .form-row{
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+    .new-order input,select,textarea{  
+        width:100%;
+    }
+
+    .new-order textarea{
+        height: 300px;
+    }
+
+    label{width: 100%;}
+    
+}
+
+/* END FORM CONTACT */

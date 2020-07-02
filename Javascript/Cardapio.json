@@ -1,0 +1,141 @@
+[
+    {
+        "name":"Hossomaki",
+        "description":"Sushis enrolados com a alga por fora",
+        "amount":8,
+        "flavors":[
+                {"name":"Califórnia","price":16.49,"description":"Arroz, Kani, Manga e Pepino"},
+                {"name":"Camarão","price":17.65,"description":"Arroz e Camarão"},
+                {"name":"Kani","price":14.99,"description":"Arroz e Kani Kama"},
+                {"name":"Pepino","price":13.99,"description":"Arroz e Pepino"},
+                {"name":"Salmão","price":16.39,"description":"Arroz e Salmão fresco"},
+                {"name":"Tradicional","price":17.29,"description":"Arroz, Cenoura, Gengibre em conserva, Kani, Ovo e Pepino"},
+                {"name":"Tomate seco e rúcula","price":15.69,"description":"Arroz, Tomate seco e Rúcula"}
+        ]
+    },
+
+    {
+        "name":"Uramaki",
+        "description":"Sushis enrolados com arroz por fora e alga por dentro",
+        
+        "amount":8,
+        "flavors":[
+            {"name":"Califórnia","price":18.23,"description":"Arroz, Kani, Manga e Pepino"},
+            {"name":"Camarão","price":13.25,"description":"Arroz e Camarão"},
+            {"name":"Kani" ,"price":12.99,"description":"Arroz e Kani Kama"},
+            {"name":"Salmão" ,"price":14.99,"description":"Arroz e Salmão"},
+            {"name":"Salmão com Cream cheese","price":17.39,"description":"Arroz, Salmão fresco e Cream cheese"},
+            {"name":"Skin" ,"price":18.29,"description":"Arroz e Pele de salmão"},
+            {"name":"Tomate seco e rúcula" ,"price":14.69,"description":"Arroz, Tomate seco e Rúcula"}
+        ]   
+    },
+
+    {
+        "name":"Joy",
+        "description":"Arroz enrolado com salmão por fora",
+        
+        "amount":8,
+        "flavors":[
+            {"name":"Salmão","price":17.99,"description":"Arroz e Salmão"},
+            {"name":"Salmão com Cream cheese","price":18.39,"description":"Arroz, Salmão fresco e Cream cheese"},
+            {"name":"Skin" ,"price":15.29,"description":"Arroz e Pele de salmão"},
+            {"name":"Skin com Cream cheese" ,"price":16.69,"description":"Arroz, Pele de salmão e Cream cheese"},
+            {"name":"Nachos" ,"price":13.69,"description":"Arroz, Doritos"}
+        ]
+    },
+    {
+        "name":"Niguiri",
+        "description":"Arroz coberto com salmão",
+        
+        "amount":8,
+        "flavors":[
+            {"name":"Camarão","price":12.99,"description":"Arroz e Camarão"},
+            {"name":"Salmão","price":14.39,"description":"Arroz e Salmão fresco"},
+            {"name":"Tilápia","price":13.29,"description":"Arroz e Tilápia"},
+            {"name":"Kani","price":12.69,"description":"Arroz e Kani"},
+            {"name":"Grelhado","price":14.69,"description":"Arroz e Salmão grelhado"},
+            {"name":"Maçaricado","price":16.69,"description":"Arroz e Salmão maçaricado"}
+        ]
+    },
+    {
+        "name":"Sashimi",
+        "description":"Fatias cruas de peixe fresco",
+        
+        "amount":25,
+        "flavors":[
+            {"name":"Salmão","price":33.72,"description":"Fatias de Salmão"},
+            {"name":"Atum","price":31.46,"description":"Fatias de Atum"},
+            {"name":"Tilápia","price":28.69,"description":"Fatias de Tilápia"}
+        ]
+    },
+    {
+        "name":"Harumaki",
+        "description":"Enrolado frito",
+        
+        "amount":10,
+        "flavors":[
+            {"name":"Queijo","price":20.56,"description":"Enroloado frito de queijo"},
+            {"name":"Legumes","price":18.29,"description":"Enroloado frito de legumes"},
+            {"name":"Frango","price":19.45,"description":"Enroloado frito de frango"},
+            {"name":"Nutella","price":22.98,"description":"Enroloado frito de nutella"},
+            {"name":"Chocolate branco","price":21.67,"description":"Enroloado frito de choco. branco"}
+        ]
+    },
+    {
+        "name":"Guioza",
+        "description":"Pastelzinho japonês",
+        
+        "amount":8,
+        "flavors":[
+            {"name":"Bovino","price":18.98,"description":"Carne de boi"},
+            {"name":"Suíno","price":19.98,"description":"Carne de porco"},
+            {"name":"Frango","price":17.98,"description":"Frango"},
+            {"name":"Legumes","price":16.98,"description":"Repolho com ou sem carne moida"}
+        ]
+    },
+    {
+        "name":"Yakisoba",
+        "description":"Macarrão em molho",
+        
+        "amount":1,
+        "flavors":[
+            {"name":"Carne","price":33.72,"description":"Tiras de carne"},
+            {"name":"Frango","price":31.46,"description":"Tiras de frango"},
+            {"name":"Legumes","price":28.69,"description":"Legumes variados"}
+        ]
+    },
+    {
+        "name":"Hot roll",
+        "description":"Uramaki enrolado com alga, empanado e frito",
+        
+        "amount":15,
+        "flavors":[
+            {"name":"Salmão","price":14.98,"description":"Salmão"},            
+            {"name":"Salmão cheese","price":15.98,"description":"Salmão com Cream cheese"},
+            {"name":"Grelhado","price":15.48,"description":"Salmão grelhado"},
+            {"name":"Skin","price":16.98,"description":"Pele de salmão frita"},
+            {"name":"Crispy","price":16.69,"description":"Couve frita por cima"},
+            {"name":"Kani","price":14.98,"description":"Kani"},
+            {"name":"Banana com chocolate","price":18.98,"description":"Banana com nutella"},
+            {"name":"Morango com chocolate","price":20.98,"description":"Morango com nutella"}
+        ]
+    },
+    {
+        "name":"Temaki",
+        "description":"Cone de alga recheado",
+        
+        "amount":1,
+        "flavors":[
+            {"name":"Salmão","price":7.98,"description":"Arroz, Salmão e cebolinha"},
+            {"name":"Salmão cheese","price":8.98,"description":"Arroz, Salmão com Cream cheese e cebolinha"},
+            {"name":"Salmão skin","price":8.98,"description":"Arroz ePele de salmão frita"},
+            {"name":"Salmão fry","price":9.98,"description":"Empanado e frito"},
+            {"name":"Atum","price":7.98,"description":"Arroz, Atum e cebolinha"},
+            {"name":"Atum cheese","price":8.98,"description":"Arroz, Atum com Cream cheese e cebolinha"},
+            {"name":"Shieji","price":9.98,"description":"Arroz e Shimeji"},
+            {"name":"Califórnia","price":7.98,"description":"Arroz, Manga, Kani e Pepino"},
+            {"name":"Camarão","price":10.98,"description":"Arroz, Camarão batido e cebolinha"}
+        ]
+    }
+    
+]

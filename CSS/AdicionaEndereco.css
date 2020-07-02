@@ -1,0 +1,193 @@
+body{
+    background-image: url(../src/food6.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.container-all{
+    margin-left: 5%;
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.page-info{
+    margin-top: 50px;
+    width: 40%;
+    color:white;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.info-title{
+    font-family: venner;
+    font-size: 36px;
+}
+
+.info-content{
+    font-size: 22px;
+    margin-top: 50px;
+    line-height: 27px;
+}
+
+.container-cep{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 24px;
+    margin-top: 40px;
+    background-color: #81c33e;
+    color:black;
+    width: 50%;
+    box-shadow: 0 0 10px black;
+    border-radius: 5px;
+    padding: 25px 0 25px 10px;
+}
+
+.t_CEP{
+    margin-left: 10px;
+    font-size: 22px;
+    border: none;
+    background-color: transparent;
+    border-bottom: 2px solid white;
+}
+
+.error-message{
+    margin-top: 15px;
+    font-size: 18px;
+    width: 90%;
+    text-align: justify;
+}
+
+.error-signal{
+    color:red;
+}
+
+.error-message , .error-signal{
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+
+.add-address{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    color: white;
+    width: 35%;
+    margin-top: 75px;
+}
+
+.input-address{
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.781);
+    color:white;
+    padding: 5px 15px 5px 0;
+    margin-bottom: 25px;
+}
+
+.input-address:focus{
+    border-bottom: 2px solid rgb(221, 188, 0);
+}
+
+#t_endereco,#t_bairro{
+    width: 80%;
+}
+
+.container-cidade-uf{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+}
+
+.container-b-actions{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content:flex-end;
+    margin-top: 30px;
+    width: 100%;
+}
+
+.b_enviar{
+    cursor: pointer;
+}
+
+.b-action:nth-child(2){
+    background-color: #326400;
+}
+
+.b-action:nth-child(1){
+    background-color: #cf0000;
+}
+
+.b-action:hover{
+    color: white;
+    filter: brightness(75%);
+}
+
+.container-retirada{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 15px;
+    font-size: 22px;
+}
+
+.check-retirada{
+    margin-right: 15px;
+    
+}
+
+.container-retirada label{cursor: pointer;transition: .3s;}
+.container-retirada label:hover{color:rgb(221, 188, 0)}
+
+.b-back{
+    position: absolute;
+    right: 50px;
+    margin-top: -450px;
+    padding: 8px 15px;
+    background-color: rgb(0,6,55);
+    color: white;
+    border:none;
+    border-radius: 5px;
+    box-shadow: 0 0 15px black;
+    transition: .5s;
+}
+
+.b-back:hover{
+    background-color: rgb(221, 188, 0);
+    color: black;
+}
+
+.back-icon{
+    margin-left: 8px;
+    transform: rotateY(180deg);
+}
+
+.container-num-comp{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+}
+
+.container-payment-method{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    font-size: 20px;
+}
+
+.radio-payment{
+    margin-right: 5px;
+}

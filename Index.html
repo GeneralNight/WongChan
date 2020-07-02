@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wong Chan | Comida Japonesa</title>
+    <link rel="stylesheet" href="CSS/Global.css">
+    <link rel="stylesheet" href="CSS/Index.css">
+    <script src="https://kit.fontawesome.com/3b5310efad.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="src/Icon.jpg" type="image/x-icon">
+    <script
+        src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+        crossorigin="anonymous">
+    </script>
+</head>
+<body>
+    
+    <header class="cabecalho">
+        <i class="fas fa-bars menuIcon" onclick="ChangeMenuState()"></i>
+        <a href="Index.html"><img src="src/Logo.png" alt="" class="img-logo"></a>
+        <nav class="menu">
+            <div class="header-info">
+                <a href="https://www.google.com.br/maps/place/Av.+Nove+de+Julho,+615+-+Centro,+Ribeir%C3%A3o+Preto+-+SP,+14015-170/@-21.1843883,-47.8141505,17z/data=!4m5!3m4!1s0x94b9bee595bf2e6b:0x660abd727141c400!8m2!3d-21.1843883!4d-47.8119618" target="_blank">
+                    <p>Av. Nove de Julho, 615 - Centro, Ribeirão Preto - SP</p>
+                </a>
+               <div class="social-media">
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-facebook"></i>
+                <i class="fab fa-whatsapp"></i>
+               </div>
+            </div>
+            <ul class="menu-list">
+                <li class="menu-items"><a href="Index.html" class="menu-link actual-page">Início</a></li>
+                <li class="menu-items"><a href="Cardapio.php" class="menu-link">Cardápio</a></li>
+                <li class="menu-items"><a href="SobreNos.html" class="menu-link">Sobre nós</a></li>
+                <li class="menu-items"><a href="FaleConosco.html" class="menu-link">Fale conosco</a></li>
+                <li class="menu-items"><a href="FazerPedido.php" class="menu-link">Fazer pedido</a></li>
+            </ul>
+        </nav>
+        
+    </header>
+
+    <div class="cover" onclick="CloseMenu()"></div>
+
+   <div class="content-entry">
+        <p class="text-entry">Descubra o melhor da comida oriental</p>
+        <button onclick="window.location.href='./Cardapio.php'" class="b-Info">Ver cardápio<i class="fas fa-caret-right"></i></button>
+   </div>
+
+   <div class="about-info">
+       <div class="container-text">
+           <p class="about-title title">Um dos mais antigos da cidade</p>
+           <p class="about-text">
+                Tudo começou com dois irmãos recém formados, uma pequena herança e um sonho de servir a população da
+                cidade com o carisma e simpatia do interior. Alguns anos se passaram, Wong Chan continuou crescendo, e hoje estamos mais uma
+                vez inovando, trazendo todo o conforto e bom atendimento que desenvolvemos para o meio digital. Esperamos que você tenha uma
+                ótima experiência enquanto navega por aqui, fique à vontade!
+            </p>
+            <button onclick="window.location.href='./SobreNos.html'" class="b-Info b-Info-dark">Sobre nós <i class="fas fa-caret-right"></i></button>
+       </div>
+       <div class="about-img"></div>
+   </div>
+
+   <div class="container-promotions">
+        <div class="container-title">
+            <p class="promotions-title title">Promoções semanais</p>
+            <div class="container-b-actions">
+                <button onclick="window.location.href='./Cardapio.php'" class="b-action">Ver cardápio<i class="fas fa-book"></i></button>
+                <button class="b-action" onclick="window.location.href='./FazerPedido.php'">Fazer pedido<i class="fas fa-concierge-bell"></i></button>
+        </div>
+        </div>
+        <div class="container-cards">
+            <div class="card">
+                <p class="week-day">Domingo</p>
+                <img src="src/Promo7.jpg" alt="" class="img-food-day">
+                <p class="food-name">2 Yakisobas médios à escolha</p>
+                <p class="food-price">R$ 30,00</p>
+            </div>
+            <div class="card">
+                <p class="week-day">Segunda-feira</p>
+                <img src="src/Promo1.jpg" alt="" class="img-food-day">
+                <p class="food-name">30 Joys à escolha</p>
+                <p class="food-price">R$ 30,00</p>
+            </div>
+            <div class="card">
+                <p class="week-day">Terça-feira</p>
+                <img src="src/Promo2.jpg" alt="" class="img-food-day">
+                <p class="food-name">100 fatias de sashimi à escolha</p>
+                <p class="food-price">R$ 30,00</p>
+            </div>
+            <div class="card">
+                <p class="week-day">Quarta-feira</p>
+                <img src="src/Promo3.jpg" alt="" class="img-food-day">
+                <p class="food-name">30 Hossomaki à escolha</p>
+                <p class="food-price">R$ 30,00</p>
+            </div>
+            <div class="card">
+                <p class="week-day">Quinta-feira</p>
+                <img src="src/Promo4.png" alt="" class="img-food-day">
+                <p class="food-name">20 Niguiri à escolha</p>
+                <p class="food-price">R$ 30,00</p>
+            </div>
+            <div class="card">
+                <p class="week-day">Sexta-feira</p>
+                <img src="src/Promo5.jpg" alt="" class="img-food-day">
+                <p class="food-name">30 Hot Roll à escolha</p>
+                <p class="food-price">R$ 30,00</p>
+            </div>
+            <div class="card">
+                <p class="week-day">Sábado</p>
+                <img src="src/Promo6.jpg" alt="" class="img-food-day">
+                <p class="food-name">2 Tepans Grandes à escolha</p>
+                <p class="food-price">R$ 30,00</p>
+            </div>
+        </div>
+   </div>
+
+   <div class="opening-hours">
+        <div class="container-hour">
+            <p class="opening-title title">Horário de atendimento</p>
+            <div class="opening-text"> 
+                <div class="row-hour"><p class="day-hour">Domigo       </p>  <div class="line"></div> <div class="hour">11:00 às 15:00 <i class="fas fa-yin-yang"></i> 19:00 às 01:00</div></div>
+                <div class="row-hour"><p class="day-hour">Segunda-feira </p> <div class="line"></div> <div class="hour">11:00 às 15:00 <i class="fas fa-yin-yang"></i> 19:00 às 23:00</div></div>
+                <div class="row-hour"><p class="day-hour">Terça-feira  </p>  <div class="line"></div> <div class="hour">11:00 às 15:00 <i class="fas fa-yin-yang"></i> 19:00 às 23:00</div></div>
+                <div class="row-hour"><p class="day-hour">Quarta-feira </p>  <div class="line"></div> <div class="hour">11:00 às 15:00 <i class="fas fa-yin-yang"></i> 19:00 às 23:00</div></div>
+                <div class="row-hour"><p class="day-hour">Quinta-feira </p>  <div class="line"></div> <div class="hour">11:00 às 15:00 <i class="fas fa-yin-yang"></i> 19:00 às 23:00</div></div>
+                <div class="row-hour"><p class="day-hour">Sexta-feira  </p>  <div class="line"></div> <div class="hour">11:00 às 15:00 <i class="fas fa-yin-yang"></i> 19:00 às 01:00</div></div>
+                <div class="row-hour"><p class="day-hour">Sábado       </p>  <div class="line"></div> <div class="hour">11:00 às 15:00 <i class="fas fa-yin-yang"></i> 19:00 às 01:00</div></div>
+            </div>
+        <p class="container-button">
+            Dúvidas? <button onclick="window.location.href='./FaleConosco.html'" class="b-Info b-Info-dark">Fale conosco<i class="fas fa-caret-right"></i></button>
+        </p>
+        </div>
+        <div class="opening-img"></div>
+    </div>
+
+    <div class="container-make-order">
+        <p class="make-order-text text-entry">Aproveite o melhor do oriente direto da sua casa</p>
+        <button class="b-action" onclick="window.location.href='./FazerPedido.php'" >Fazer pedido<i class="fas fa-concierge-bell"></i></button>
+    </div>
+
+    <footer>
+        <div class="part-up">
+            <div class="up-left">
+                <a href="Index.html"><img src="src/Logo2.png" alt="" class="img-logo-footer"></a>
+            </div>
+
+            <div class="up-right">
+                <div class="social-medias-footer">
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-facebook"></i>
+                    <i class="fab fa-whatsapp"></i>
+                </div>
+                <div class="contact-medium">
+                    <a href="https://www.google.com.br/maps/place/Av.+Nove+de+Julho,+615+-+Centro,+Ribeir%C3%A3o+Preto+-+SP,+14015-170/@-21.1843883,-47.8141505,17z/data=!4m5!3m4!1s0x94b9bee595bf2e6b:0x660abd727141c400!8m2!3d-21.1843883!4d-47.8119618" target="_blank">
+                        <p class="contact"><i class="fas fa-map-marked-alt"></i>Av. Nove de Julho, 615 - Centro, Ribeirão Preto - SP</p>
+                    </a>
+                    <a href="mailto:contato@wongchan.com"><p class="contact"><i class="fas fa-envelope"></i>contato@wongchan.com</p></a>
+                    <a href="tel:+551636524332"><p class="contact"><i class="fas fa-phone-alt"></i>(16) 3652-4232</p></a>
+                </div>
+            </div>
+        </div>
+        <div class="part-down">
+            © Copyright / 2020 • Wong Chan • Todos os direitos reservados 
+        </div>
+    </footer>
+
+</body>
+<script type="text/JavaScript" src="JavaScript/controlMenu.js"></script>
+<script type="text/JavaScript" src="JavaScript/Index.js"></script>
+</html>

@@ -1,0 +1,365 @@
+
+.content-entry{
+    width: 100%;
+    height: 570px;
+    background-image: url("../src/Food.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 15px black inset;
+}
+
+.text-entry{
+    font-family: venner;
+    color: rgb(221, 188, 0);
+    font-size: 50px;
+    text-shadow: 0vw -5px 10px black;
+    text-align: center;
+    width: 90%;
+}
+
+.b-Info{
+    margin-top: 40px;
+    padding: 10px 30px;
+    font-size: 22px;
+    background-color: transparent;
+    border-radius: 4px;
+    cursor: pointer;
+    border: 3px solid white;
+    transition: 0.4s;
+    box-shadow: 0 0 5px black;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+.b-Info:hover{
+    color: black;
+    background-color: rgb(221, 188, 0);
+    border: 3px solid transparent;
+    box-shadow: 0 0 15px black; 
+}
+
+.b-Info i{
+    font-size: 25px;
+    margin-left: 15px;
+}
+
+.b-Info-dark{
+    background-color: black;
+    border-color: transparent;
+}
+
+/*  END CONTENT ENTRY  */
+
+/*  ABOUT INFO  */
+
+.about-info{
+    margin-left: 5%;
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 80px;
+}
+
+.container-text{
+    width: 55%
+}
+
+.about-text{
+    text-align: justify;
+    font-size: 18px;
+    line-height: 28px;
+    margin-top: 15px;
+}
+
+.about-img{
+    border-radius: 3px;
+    box-shadow: 0 0 15px black;
+    background-image: url(../src/Restaurant3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-width: 500px;
+    width: 30%;
+    height: 300px;
+}
+
+@media screen and (max-width:1300px){
+    .about-info{
+        border-radius: 3px;
+        box-shadow: 0 0 15px black;
+        background-image: url(../src/Restaurant3.jpg);
+        background-size: cover;
+        background-position: center;
+        width: 95%;
+        margin-left: 2.5%;
+        color: white;
+        padding: 25px;
+        
+    }
+
+    .container-text{z-index: 10;position: relative;width: 80%;}
+
+    .about-img{
+        min-width: auto;
+        z-index:0;
+        opacity: 1;
+        background-color: rgba(0, 0, 0, 0.6);
+        background-image: url();
+        margin-top:-25px;
+        position: absolute;
+        left:2.5%;
+    }
+
+    .b-Info-dark{
+        background-color: rgb(219, 219, 219);
+        color: black;
+        border-color: transparent;
+    }
+}
+
+@media screen and (max-width:700px){
+    .container-text{z-index: 10;position: relative;width: 100%;}
+}
+
+/*  END ABOUT INFO  */
+
+/*  PROMOTIONS WEEKK  */
+
+.container-promotions{
+    background-image: url(../src/food1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    box-shadow: 0vw 0vw 15px black inset;
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.promotions-title{
+    color: white;
+    margin-top: 25px;
+    text-shadow: 0vw -02px 10px black;
+    justify-content: space-between;
+    width: 90%;
+}
+
+.container-title{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    width: 90%;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.container-b-actions{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+    justify-content: flex-end;
+}
+
+@media screen and (max-width:450px){
+    .container-b-actions{flex-wrap: wrap;}
+    .container-title{align-items: center;}
+}
+
+.container-cards{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 70px;
+    flex-wrap: wrap;
+}
+
+.card{
+    filter: brightness(40%);
+    margin: 0 10px;
+    margin-bottom: 25px;
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #333333;
+    padding: 10px 0;
+    border-radius: 4px;
+    box-shadow: 0 0 15px black;
+    color: white;
+    height: 250px;
+}
+
+.week-day{
+    font-size: 22px;
+    color: white;
+}
+
+.img-food-day{
+    width: 100%;
+}
+
+.food-name{
+    text-align: center;
+    font-size: 18px;
+}
+
+.food-price{
+    margin-top: 15px;
+}
+
+/*  END PROMOTIONS  */
+
+.opening-hours{
+    margin-top: 50px;
+    margin-left: 5%;
+    width: 90%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container-hour{
+    text-align: right;    
+    width: 55%;
+}
+
+.container-button{
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    font-size: 25px;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+.container-button .b-Info{margin-left: 25px;}
+
+.opening-img{
+    border-radius: 3px;
+    box-shadow: 0 0 15px black;
+    background-image: url(../src/Restaurant2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-width: 500px;
+    width: 30%;
+    height: 300px;
+}
+
+.opening-text{
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: flex-end;
+    font-size: 20px;
+    justify-content: flex-end;
+}
+
+.row-hour{
+    margin-bottom: 15px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: baseline;
+    color: #666666;
+    padding: 0px 10px;
+    border-radius: 3px;
+}
+
+.day-hour{
+    text-align: left;
+    width: 30%;
+}
+
+.hour{width: 70%;display: flex;flex-direction: row;justify-content: space-around;}
+
+.line{
+    margin-right: 25px;
+    width:60%;
+    height: 1px;
+    background-image: linear-gradient(to right, transparent 50%, #223049 50%);
+    background-size: 20px 100%;
+}
+
+.row-hour i{
+    margin: 0 25px;
+}
+
+@media screen and (max-width:1300px){
+    .opening-hours{
+        border-radius: 3px;
+        box-shadow: 0 0 15px black;
+        background-image: url(../src/Restaurant2.jpg);
+        background-size: cover;
+        background-position: center;
+        width: 95%;
+        margin-left: 2.5%;
+        color: white;
+        align-items: inherit;
+        padding: 25px;
+        
+    }
+
+    .container-hour{z-index: 10;position: relative;width: 100%;text-align: center;}
+    
+    .opening-title{width: 100%;text-align: center;}
+
+    .opening-img{
+        min-width: auto;
+        z-index:0;
+        opacity: 1;
+        background-color: rgba(0, 0, 0, 0.6);
+        background-image: url();
+        margin-top:-25px;
+        position: absolute;
+        left:2.5%;
+    }
+
+    .line{position: absolute;opacity: 0;z-index: -1;}
+}
+
+@media screen and (max-width:535px){
+    .row-hour{
+        flex-wrap: wrap;
+    }
+}
+
+/* END OF HOUR */
+
+/*  MAKE ORDER */
+
+.container-make-order{
+    margin-top: 80px;
+    width: 100%;
+    background-image: url("../src/Food2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 15px black inset;
+    height: 450px;
+    background-position: center;
+}
+
+.container-make-order .b-action{
+    margin-top: 40px;
+}

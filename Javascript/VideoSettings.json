@@ -1,0 +1,29 @@
+[
+    {
+        "video_name":"video1.mp4",
+        "main_phrase":"A variedade é toda sua",
+        "sub_phrase":"Desenvolvemos um cardápio totalmente inovador e com a mais alta variedade para atender a todos os gostos, aproveite!",
+        "margin_top":"-12vw"
+    },
+
+    {
+        "video_name":"video2.mp4",
+        "main_phrase":"Qualidade é nosso lema",
+        "sub_phrase":"Buscamos sempre oferecer ingredientes frescos e da mais alta qualidade para você e sua família!",
+        "margin_top":"-8.5vw"
+    },
+
+    {
+        "video_name":"video3.mp4",
+        "main_phrase":"A prioridade é a sua satisfação",
+        "sub_phrase":"Estamos sempre inovando, estudando e colocando em prática tudo que aprendemos e vamos aprender para sempre proporcionar uma experiência memorável para todos os clientes que confiam em nós!",
+        "margin_top":"-12vw"
+    },
+
+    {
+        "video_name":"video4.mp4",
+        "main_phrase":"A primeira imperssão é a que fica",
+        "sub_phrase":"Por isso iremos dar o nosso melhor todos os dias, pois todo dia temos o privilégio de conhecer novas pessoas!",
+        "margin_top":"-10vw"
+    }
+]

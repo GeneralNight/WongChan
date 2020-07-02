@@ -1,0 +1,405 @@
+
+.carrossel{
+    display: flex;
+    flex-direction: column;
+}
+
+.line{
+    width: 0%;
+    height: 5px;
+    background-color: rgb(221, 188, 0);
+    filter: brightness(80%);
+}
+
+.container-video{
+    z-index: -1;
+    width: 100%;
+    overflow: hidden;
+    background-color: #111111;
+}
+
+.container-video video{
+    filter: brightness(40%);
+}
+
+.container-video-info{
+    width: 100%;
+    height: 557px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-arrows-action{
+    width: 100%;
+    height: 557px;
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.arrow{
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(173, 173, 173);
+    padding: 50px 18px;
+    color: #111111;
+    border-radius: 0 3px 3px 0;
+    font-size: 32px;
+    transition: .5s;
+}
+
+.arrow:last-child{
+    border-radius: 3px 0 0 3px;
+}
+
+.arrow:hover{
+    background-color: #81c33e;
+    color: #d6d6dd;
+}
+
+.info{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    text-shadow: 0 0 15px black;
+}
+
+.main-phrase{
+    font-size: 64px;
+    font-family: venner;
+    text-align: center;
+    opacity: 0;
+}
+
+.div-line{
+    background-color: white;
+    width: 0%;
+    height: 3px;
+    margin-top: 35px;
+}
+
+.sub-phrase{
+    margin-top: 45px;
+    text-align: center;
+    width: 70%;
+    font-size: 28px;
+    font-family: 'Roboto Condensed', sans-serif;
+    opacity: 0;
+}
+
+.container-dots{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 80px;
+}
+
+.dot{
+    margin: 0 15px;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: white;
+    box-shadow: 0 0 5px black;
+    border: 2px white solid;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.dot:hover{
+    filter: brightness(80%);
+    border: transparent;
+}
+
+/* ABOUT SECTION */
+
+.about-info{
+    margin-left: 5%;
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 80px;
+}
+
+.container-text{
+    width: 55%
+}
+
+.about-text{
+    text-align: justify;
+    font-size: 18px;
+    line-height: 28px;
+    margin-top: 15px;
+}
+
+.about-img{
+    border-radius: 3px;
+    box-shadow: 0 0 15px black;
+    background-image: url(../src/Restaurant1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-width: 500px;
+    width: 30%;
+    height: 300px;
+}
+
+@media screen and (max-width:1300px){
+    .about-info{
+        border-radius: 3px;
+        box-shadow: 0 0 15px black;
+        background-image: url(../src/Restaurant1.jpg);
+        background-size: cover;
+        background-position: center;
+        width: 95%;
+        margin-left: 2.5%;
+        color: white;
+        padding: 25px;
+    }
+
+    .container-text{z-index: 10;position: relative;width: 80%;}
+
+    .about-img{
+        min-width: auto;
+        z-index:0;
+        opacity: 1;
+        background-color: rgba(0, 0, 0, 0.8);
+        background-image: url();
+        margin-top:-25px;
+        position: absolute;
+        left:2.5%;
+    }
+
+    .b-Info-dark{
+        background-color: rgb(219, 219, 219);
+        color: black;
+        border-color: transparent;
+    }
+}
+
+@media screen and (max-width:700px){
+    .container-text{z-index: 10;position: relative;width: 100%;}
+}
+
+/* END ABOUT SECTION*/
+
+.services-info{
+    box-shadow: 0 0 15px black inset;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../src/food7.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: white;
+    padding: 50px 0 100px 0;   
+}
+
+.service-title{
+    margin-top: 10px;
+}
+
+.container-services-info{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 90%;
+    justify-content: center;
+    padding: 50px 0 100px 0;
+    flex-wrap: wrap;
+}
+
+
+.service{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 80px;
+    flex-wrap: wrap;
+    text-align: center;
+    min-width: 300px;
+}
+
+.service-text{
+    width: 70%;
+    margin-top: 25px;
+    font-size: 22px;
+    font-family: roboto;
+    font-weight: bold;
+}
+
+.b-action{margin-left: 0px;}
+
+/*OPPENING HOURS*/
+
+.opening-hours{
+    margin-top: 50px;
+    margin-left: 5%;
+    width: 90%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container-hour{
+    text-align: right;    
+    width: 55%;
+}
+
+.container-button{
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    font-size: 25px;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+.container-button .b-Info{margin-left: 25px;}
+
+.opening-img{
+    border-radius: 3px;
+    box-shadow: 0 0 15px black;
+    background-image: url(../src/Restaurant2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-width: 500px;
+    width: 30%;
+    height: 300px;
+}
+
+.opening-text{
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: flex-end;
+    font-size: 20px;
+    justify-content: flex-end;
+}
+
+.row-hour{
+    margin-bottom: 15px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: baseline;
+    color: #666666;
+    padding: 0px 10px;
+    border-radius: 3px;
+}
+
+.day-hour{
+    text-align: left;
+    width: 30%;
+}
+
+.hour{width: 70%;display: flex;flex-direction: row;justify-content: space-around;}
+
+.line-hour{
+    margin-right: 25px;
+    width:60%;
+    height: 1px;
+    background-image: linear-gradient(to right, transparent 50%, #223049 50%);
+    background-size: 20px 100%;
+}
+
+.row-hour i{
+    margin: 0 25px;
+}
+
+.b-Info{
+    margin-top: 40px;
+    padding: 10px 30px;
+    font-size: 22px;
+    background-color: transparent;
+    border-radius: 4px;
+    cursor: pointer;
+    border: 3px solid white;
+    transition: 0.4s;
+    box-shadow: 0 0 5px black;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+.b-Info:hover{
+    color: black;
+    background-color: rgb(221, 188, 0);
+    border: 3px solid transparent;
+    box-shadow: 0 0 15px black; 
+}
+
+.b-Info i{
+    font-size: 25px;
+    margin-left: 15px;
+}
+
+.b-Info-dark{
+    background-color: black;
+    border-color: transparent;
+}
+
+@media screen and (max-width:1300px){
+    .opening-hours{
+        border-radius: 3px;
+        box-shadow: 0 0 15px black;
+        background-image: url(../src/Restaurant2.jpg);
+        background-size: cover;
+        background-position: center;
+        width: 95%;
+        margin-left: 2.5%;
+        color: white;
+        align-items: inherit;
+        padding: 25px;
+        
+    }
+
+    .container-hour{z-index: 10;position: relative;width: 100%;text-align: center;}
+    
+    .opening-title{width: 100%;text-align: center;}
+
+    .opening-img{
+        min-width: auto;
+        z-index:0;
+        opacity: 1;
+        background-color: rgba(0, 0, 0, 0.6);
+        background-image: url();
+        margin-top:-25px;
+        position: absolute;
+        left:2.5%;
+    }
+
+    .line-hour{position: absolute;opacity: 0;z-index: -1;}
+}
+
+@media screen and (max-width:535px){
+    .row-hour{
+        flex-wrap: wrap;
+    }
+}
+
+/* END OF HOUR */

@@ -1,0 +1,111 @@
+.cover-menu{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-image: url(../src/Cover.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+    filter: brightness(75%);
+}
+
+.container-menu{
+    width: 97.5%;
+    margin-left: 1.25%;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.item{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    color: white;
+    margin-bottom: 75px;
+    justify-content: space-between;
+}
+
+.img-item{
+    min-width: 225px;
+    max-height: 200px;
+    background-image: url(../src/hossomaki.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 3px;
+    box-shadow: 0 0 15px #111111;
+}
+
+.info-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.item-name{
+    font-size: 24px;
+    font-family: venner;
+    letter-spacing: 1px;
+}
+
+.item-description{margin-top: 5px;font-size: 18px;color: rgb(221, 188, 0);}
+
+.container-item-bottom{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin-top: 15px;
+}
+
+.flavors-item{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.flavor{
+    width: 90%;
+    font-size: 18px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    transition: .4s;
+    padding: 8px 5px;
+}
+
+.flavor:hover{
+    background-color: rgb(221, 188, 0);
+    color: black;
+}
+
+.flavor:hover .line{background-color: black;}
+
+.flavor-name{width: 15%;text-align: left;}
+
+.line{
+    width: 65%;
+    
+    
+    border: 1px dashed white;
+}
+
+.flavor-price{
+    width: 15%;text-align: center;
+}
+
+@media screen and (min-width:1400){
+    .column-items{
+        width: 100%;
+        background-color: red;
+    }
+}

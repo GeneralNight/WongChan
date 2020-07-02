@@ -1,0 +1,306 @@
+.container-all{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container-order{
+    position: fixed;
+    left:0;
+    z-index:0;
+    top:161px;
+    width: 25%;
+    height: 100%;
+    background-image:url(../src/sushi-istock.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 0 0 15px black;
+    color: white;
+    overflow-y: scroll;
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cover-order{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(53, 53, 53, 0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.cover-menu,.container-menu{
+    width: 75%;
+    margin-left: 25%;
+    align-items: center;
+}
+
+.item{width: 90%;}
+
+.title-order{
+    margin-top: 30px;
+}
+
+.expand-order{
+    cursor: pointer;
+    position: fixed;
+    background-color: #81c33e;
+    color:black;
+    left:25%;
+    padding: 25px 8px;
+    font-size: 18px;
+    z-index: 1000;
+    transition: .5s;
+    border-radius: 0 2px 2px 0;
+    box-shadow: 5px 0px 15px black;
+}
+
+.expand-order:hover{
+    background-color: rgb(221, 188, 0);
+}
+
+.add-icon{
+    cursor: pointer;
+    transition: .3s;
+    padding: 8px;
+}
+
+.add-icon:hover{
+    color: #326400;
+}
+
+.container-items{
+    position: absolute;
+    z-index: 10000;
+    left:0;
+    top: 100px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 65px;
+}
+
+.item-order{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: #81c33e;
+    box-shadow: 0 0 15px black;
+    padding: 10px 10px;
+    color:black;
+    border-radius: 3px;
+    margin-bottom: 25px;
+    transition: .3s;
+}
+
+.total-item-order{
+    font-family: venner;
+    color:rgb(0, 6, 85);
+    font-size: 18px;
+    margin-top: 8px;
+}
+
+.item-order-row{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.item-order:hover{background-color: rgb(221, 188, 0);}
+
+.item-order-name{
+    width: 50%;
+    font-family: venner;
+    font-size: 18px;
+}
+
+.item-order-ammount{
+    background-color: transparent;
+    border: none;
+    color:white;
+    font-size: 15px;
+}
+
+.remove-item-order{
+    padding: 8px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.remove-item-order:hover{
+    color:#cf0000;
+}
+
+.confirm-item-remove{
+    position: fixed;
+    margin-left: 35%;
+    width: 30%;
+    padding: 20px 5px;
+    z-index: 10000;
+    background-color: #494949;
+    top:35%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5px;
+    box-shadow: 0 0 15px black;
+    z-index: -1;
+    opacity: 0;
+}
+
+.message-remove{
+    font-family: venner;
+    font-size: 24px;
+    width: 90%;
+    text-align: center;
+}
+
+.container-b-remove{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 60%;
+    margin-top: 25px;
+}
+
+.b-action-remove{
+    border:none;
+    border-radius: 3px;
+    font-size: 18px;
+    padding: 10px 15px;
+    color: white;
+    box-shadow: 0 0 5px rgba(0,0,0,0.5);
+    transition: .3s;
+}
+
+.b-action-remove:hover{
+    filter: brightness(80%);
+}
+
+.no-remove{
+    background-color: #cf0000;
+}
+
+.yes-remove{
+    background-color: #326400;
+}
+
+.b-removeAll{
+    border:none;
+    padding: 10px 15px;
+    background-color: #81c33e;
+    transition: .5s;
+    border-radius: 3px;
+    margin-bottom: 20px;
+    margin-left: 175px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.6);
+    font-size: 15px;
+}
+
+.b-removeAll:hover{
+    background-color: rgb(221, 188, 0);
+}
+
+.container-price-info{
+    position: fixed;
+    z-index: 10001;
+    padding: 15px 0 ;
+    bottom: 0;
+    left: 0;
+    width: 25%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #81c33e;
+}
+
+.total-price{
+    color: black;
+    font-family: venner;
+    font-size: 30px;
+    margin-left: 15px;
+}
+
+.b-action-delivery{
+    border: none;
+    cursor: pointer;
+    background-color: rgb(0, 6, 85);
+    color:white;
+    padding:5px 10px;
+    font-size: 18px;
+    z-index: 1000;
+    transition: .5s;
+    border-radius: 5px;
+    margin-right: 15px;
+    box-shadow: 0px 0px 10px black;
+    font-weight: bold;
+}
+
+.b-action-delivery:hover{
+    background-color: rgb(221, 188, 0);
+    color: black;
+    
+}
+
+.cover-all{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    background-color: #d6d6dd;
+    z-index: 100000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: -1;
+    opacity: 0;
+}
+
+.check-success{
+    width: 500px;
+    height: 500px;
+    background-image: url(../src/check.gif);
+    background-position: center;
+    background-size: cover;
+    margin-top: -250px;
+}
+
+.success-title{
+    margin-top: -90px;
+}
+
+.success-content{
+    font-size: 18px;
+    margin-top: 15px;
+    width: 40%;
+    text-align: center;
+}
+
+.cover-all .b-action i{
+    margin: 0;
+    margin-right: 15px;
+}
+
+.container-success-buttons{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 50px;
+    width: 40%;
+}

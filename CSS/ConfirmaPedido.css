@@ -1,0 +1,181 @@
+body{
+    background-image: url(../src/food1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.page-title{
+    color: white;
+    text-align: center;
+    margin-top: 50px;
+    font-size: 40px;
+    text-shadow: 0 0 5px black;
+}
+
+.b-back{
+    position: absolute;
+    right: 50px;
+    margin-top: -25px;
+    padding: 8px 15px;
+    background-color: rgb(0,6,55);
+    color: white;
+    border:none;
+    border-radius: 5px;
+    box-shadow: 0 0 15px black;
+    transition: .5s;
+}
+
+.b-back:hover{
+    background-color: rgb(221, 188, 0);
+    color: black;
+}
+
+.back-icon{
+    margin-left: 8px;
+    transform: rotateY(180deg);
+}
+
+.container-all{
+    margin-left: 2.5%;
+    width: 95%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 50px 0;
+    height: auto;
+    flex-wrap: wrap;
+    padding-bottom: 75px;
+}
+
+.container-item{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-around;
+    width:40%;
+    border-radius: 5px;
+    box-shadow: 0 0 15px black;
+    background-color: #494949;
+    min-height: 175px;
+    height: 175px;
+    margin-bottom: 25px;
+}
+
+.item-img{
+    min-width: 200px;
+    min-height: 175px;
+    background-image: url(../src/hossomaki.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 5px 0 0 5px;
+    
+}
+
+.column-item{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.item-name{
+    font-size: 22px;
+    font-family: venner;
+    text-align: left;
+    width: 95%;
+}
+
+.row-item{
+    width: 95%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+   
+}
+
+.container-amount{
+    font-family: venner;
+    width: 95%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 22px;
+}
+
+.item-amount{
+    background-color: transparent;
+    border: none;
+    color:white;
+    font-size: 15px;
+}
+
+.remove-item{
+    font-size: 22px;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.remove-item:hover{
+    color: #cf0000;
+}
+
+.item-price{
+    width: 95%;
+    font-family: venner;
+    font-size: 24px;
+    color: rgb(0,6,55);
+    text-align: left;
+}
+
+.container-total-order{
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    background-color: #81c33e;
+    padding: 8px 0;
+    box-shadow: 0 0 15px black;
+}
+
+.total-order{
+    margin-right: 30px;
+    font-size: 28px;
+}
+
+.send-order , .cancel-order{
+    border: none;
+    cursor: pointer;
+    background-color: rgb(0, 6, 85);
+    color:white;
+    padding:8px 15px;
+    font-size: 18px;
+    z-index: 1000;
+    transition: .5s;
+    border-radius: 5px;
+    margin-right: 15px;
+    box-shadow: 0px 0px 10px black;
+    font-weight: bold;
+}
+
+.cancel-order:hover{
+    background-color: maroon;
+}
+
+.cancel-order{
+    background-color: #cf0000;
+}
+
+
+.send-order:hover{
+    background-color: rgb(221, 188, 0);
+    color: black;
+    
+}
